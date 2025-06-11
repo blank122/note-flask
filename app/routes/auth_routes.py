@@ -25,6 +25,6 @@ def login():
         return jsonify({"token": token}), 200
     return jsonify({"error": "Invalid credentials"}), 401
 
-@auth_bp.route('/api/hello', methods=['GET'])
+@auth_bp.route('/hello', methods=['GET'])
 def hello_api():
     return jsonify({"message": "Hello from Flask API Note-app-flask!"}), 200
